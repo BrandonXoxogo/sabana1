@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabana HTML</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar" style="background-color: #6DC36D">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sabana HTML5</a>
+          <button id="btn1" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Añadir la clase fade aquí para un efecto de desvanecimiento -->
+          <div class="offcanvas offcanvas-end custom-offcanvas fade" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Temas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="antecedentes.html">1:ANTECEDENTES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="etiqueta.html">2:ETIQUETAS(sintaxis básicas)</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="texto.html">3:TEXTO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="listas.html">4:LISTAS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="tablas.html">5:TABLAS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="imagen.html">6:IMAGEN</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="video.html">7:VIDEO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="audio.html">8:AUDIO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="hipervinculo.html">9:HIPERVÍNCULOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="formulario.html">10:FORMULARIOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="semanticos.html">11:SEMÁNTICOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="frames.html">12:FRAMES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="ebdupw.html">13:ESTRUCTURA BÁSICAS DE UNA PÁGINA HTML</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="meta.html">14:META</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="extras.html">15:EXTRAS/OTRAS</a>
+                  </li>
+                
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div style="position: relative; bottom: -90px;" class="container-fluid">
+        <div class="card mt-4">
+            <div class="card-header">
+                ETIQUETAS(sintaxis basica)
+            </div>
+            <div class="card-body ">
+                <p>
+                    Entender cada tag HTML es un paso crucial para implementar tu propio código.
+
+                    Usa esta guía como referencia para las etiquetas HTML estándar y cómo utilizarlas.
+                    
+                    ¿Qué son las etiquetas HTML?
+                    Las "tags" HTML, o "etiquetas" HTML, son códigos utilizados para "marcar" el texto de una página web, con el fin de dar instrucciones al navegador sobre cómo mostrarlo.
+                    
+                    Es decir, las etiquetas HTML son el lenguaje utilizado para estructurar y definir el contenido en un documento HTML. Estas etiquetas se encuentran en el HTML (o Lenguaje de Marcado de Hipertexto) de cada página. 
+                    
+                    Cada etiqueta contiene instrucciones sencillas que indican al navegador cómo dar formato al texto y a definir los diversos elementos de la página web. Al aplicar estas etiquetas de marcado a los diferentes elementos del texto, se indica al navegador cómo mostrarlos al usuario, lo que permite crear páginas web estructuradas y con un diseño coherente.
+                    
+                    ¿Para que sirven las etiquetas HTML?
+                    Por ejemplo, puedes utilizar etiquetas HTML para aplicar cursivas, crear saltos de línea, insertar objetos multimedia, crear listas con viñetas o para definir diferentes tipos de contenido en una página web, como encabezados, párrafos, imágenes, enlaces, formularios y mucho más.
+                    
+                    En resumen, las etiquetas HTML son esenciales para diseñar y organizar el contenido de una página web de manera efectiva y clara.
+                    
+                    ¿Cómo leen las páginas web las tags HTML?
+                    Los servidores leen el código HTML para entender y mostrar el contenido. Leerá el HTML de arriba abajo, de forma muy parecida a como estás leyendo esta guía. 
+                    
+                    Puedes utilizar tantas o tan pocas etiquetas como quieras para dar formato al contenido. Sin embargo, hay algunas reglas y tags HTML esenciales que deberás seguir. 
+                    
+                    ¿Cómo se compone una etiqueta en HTML?
+                    Una tag HTML contiene tres partes:
+                    
+                    Una etiqueta de apertura — esta empezará con un símbolo < >.
+                    Contenido — unas breves instrucciones sobre cómo mostrar el elemento en la página. 
+                    Una etiqueta de cierre — cerrará con un símbolo </ >. 
+                    Sin embargo, algunas tags HTML pueden no cerrarse. Esto significa que la etiqueta HTML no necesita cerrarse con un </ >. Normalmente, usarás etiquetas no cerradas para metadatos o saltos de línea. 
+                    
+                    ¿Cuál es la diferencia entre atributo, elemento y etiqueta HTML?
+                    Pese a que esta guía trata sobre las tags HTML, es importante conocer la diferencia entre etiquetas, elementos y atributos HTML. Aunque los términos "atributo", "elemento" y "etiqueta" suelen utilizarse indistintamente, hay diferencias sutiles entre ellos.
+                    
+                    Un elemento HTML es un elemento de la página; forma parte del contenido de la misma. Una tag HTML afecta a la apariencia de un elemento HTML. Un atributo HTML describe las características de ese elemento.
+                    
+                    Aquí tienes un desglose de cómo funcionan juntos los elementos, las etiquetas y los atributos:
+                    
+                    Las etiquetas HTML contienen instrucciones para definir un elemento HTML específico e indican cómo mostrarlo en la página. Cada etiqueta HTML comienza con un símbolo de menor que "<" y termina con un símbolo de mayor que ">", y preceden y siguen al contenido del elemento. Por ejemplo, la etiqueta <p> define un párrafo en HTML.
+                    Un elemento HTML es un conjunto completo de etiquetas y contenido que define un elemento específico en una página web. Es decir, los elementos HTML son el contenido de la página intercalado entre las etiquetas. Por ejemplo, el elemento <p> incluiría tanto la etiqueta de apertura <p> como el contenido del párrafo, así como la etiqueta de cierre </p>.
+                    Los atributos HTML proporcionan información adicional a los elementos HTML sobre cómo se debe procesar o mostrar el contenido. Los atributos se agregan a las etiquetas HTML utilizando la sintaxis de "nombre de atributo=valor". Por ejemplo, la etiqueta <img> puede incluir un atributo src que especifique la ubicación de la imagen en la página, o la etiqueta <html> puede incluir un atributo lang que especifique el idioma y país: <html lang="en-US">. 
+                    Tipo
+                    
+                    Etiquetas HTML 
+                    
+                    Elementos HTML 
+                    
+                    Atributos HTML 
+                    
+                    Contiene 
+                    
+                    Instrucciones sobre cómo mostrar un elemento en la página.	El contenido de la página que debe mostrarse.	Información adicional sobre los elementos de la página.
+                    Apariencia 
+                    
+                    Empiezan por < y terminan por >.
+                    
+                    Intercalado en una etiqueta HTML.	
+                    Aparecen en la etiqueta inicial antes de cualquier elemento.
+                    
+                    En resumen, las etiquetas HTML son los bloques de construcción básicos de una página web, los elementos son los bloques completos que incluyen etiquetas y contenido, y los atributos se utilizan para proporcionar información adicional sobre cómo procesar o mostrar los elementos.
+                    
+                    ¿Qué son las etiquetas HTML básicas?
+                    Las etiquetas HTML básicas son las etiquetas más comúnmente utilizadas en la estructura de una página web.
+                    
+                    Estas etiquetas básicas suelen conformar la estructura básica de una página web y son esenciales para el desarrollo web. Sin embargo, hay muchas otras etiquetas HTML más avanzadas y especializadas que se pueden utilizar para diseñar páginas web más complejas. Te hablo de ellas más adelante. 
+                    
+                    ¿Cuáles son las etiquetas HTML básicas?
+                    Las etiquetas HTML más utilizadas son:
+                    
+                    <!DOCTYPE>: Se utiliza para especificar la versión de HTML que se está utilizando en la página.
+                    
+                    <html>: Define el inicio y el final de la página web.
+                    
+                    <head>: Define la sección de encabezado de la página, donde se incluyen elementos como el título de la página, metaetiquetas, scripts, entre otros.
+                    
+                    <title>: Define el título de la página web que aparece en la pestaña del navegador.
+                    
+                    <body>: Define la sección del cuerpo de la página web, donde se incluyen todos los elementos que se mostrarán en la página.
+                    
+                    <h1> a <h6>: Define los encabezados o títulos de diferentes niveles de jerarquía en la página web. El uso de esta etiqueta formateará cualquier texto entre la etiqueta <h> de apertura y la etiqueta </h> de cierre como un Título o subtítulo. Por ejemplo, en <h>Etiqueta de encabezamiento</h2>, <h2> y </h2> serían las etiquetas HTML y "Etiqueta de encabezamiento" es el elemento HTML, es decir, el encabezamiento de la página. 
+                    
+                    <a>: Define un enlace que el usuario puede hacer clic para ir a otra página web o a una sección diferente de la misma página.
+                    
+                    <img>: Define una imagen que se mostrará en la página web.
+                    
+                    <p>Etiqueta de párrafo</p>: Define un párrafo de texto. Las etiquetas <p> y </p> son etiquetas HTML y la "Etiqueta de párrafo" es el elemento HTML, es decir, el texto de la página. Esta etiqueta formatea cualquier texto entre la etiqueta <p> de apertura y la etiqueta </p> de cierre como un párrafo estándar o texto de cuerpo principal.
+                    <b>Etiqueta de negrita</b>: Esta etiqueta dará formato de negrita a cualquier texto que se encuentre entre la etiqueta <b> de apertura y la etiqueta </b> de cierre. Aquí, <b> y </b> son las etiquetas HTML y la "etiqueta de negrita" es el elemento HTML, es decir, el texto de la página. 
+                    <i>Etiqueta de cursiva</i>: Esta etiqueta formateará como cursiva cualquier texto entre la etiqueta de apertura <i> y la etiqueta de cierre </i>. Aquí, <i> y </i> son las etiquetas HTML y "Etiqueta cursiva" es el elemento HTML (el texto de la página).
+                    <u>Etiqueta de subrayado</u>: Esta etiqueta formateará cualquier texto entre la etiqueta <u> de apertura y la etiqueta </u> de cierre como subrayado. Aquí, <u> y </u> son las etiquetas HTML y "Etiqueta de subrayado" es el elemento HTML, es decir, el texto de la página. 
+                    Listado de etiquetas HTML comunes
+                    Hay casi 100 tipos diferentes de tags HTML que puedes utilizar en tus páginas. Aquí tienes una lista de las etiquetas HTML más comunes:
+                    
+                    Etiqueta 
+                    
+                    Tipo
+                    
+                    Qué es 
+                    
+                    <p>
+                    
+                    Etiquetas de texto HTML 
+                    
+                    Párrafo
+                    
+                    <h1>
+                    
+                    Etiquetas de texto HTML	
+                    Título 1
+                    
+                    <h2>
+                    
+                    Etiquetas de texto HTML	
+                    Título 2
+                    
+                    <h3>
+                    
+                    Etiquetas de texto HTML	
+                    Título 3
+                    
+                    <h4>
+                    
+                    Etiquetas de texto HTML	
+                    Título 4
+                    
+                    <h5>
+                    
+                    Etiquetas de texto HTML	
+                    Título 5
+                    
+                    <h6>
+                    
+                    Etiquetas de texto HTML	
+                    Título 6
+                    
+                    <strong>
+                    
+                    Etiquetas de texto HTML	
+                    Strong
+                    
+                    <em>
+                    
+                    Etiquetas de texto HTML	
+                    Énfasis
+                    
+                    <abbr>
+                    
+                    Etiquetas de texto HTML	Abreviatura
+                    <address>
+                    
+                    Etiquetas de texto HTML	Información de contacto
+                    <bdo>
+                    
+                    Etiquetas de texto HTML	Anular la dirección actual del texto
+                    <blockquote>
+                    
+                    Etiquetas de texto HTML
+                    
+                    Contenido de otra fuente
+                    <cite>
+                    
+                    Etiquetas de texto HTML
+                    
+                    Título del libro, trabajo o web
+                    
+                    <q>
+                    
+                    Etiquetas de texto HTML	
+                    Cita online 
+                    
+                    <code>
+                    
+                    Etiquetas de texto HTML
+                    
+                    Visualizar una parte del código de programación
+                    <ins>
+                    
+                    Etiquetas de texto HTML	Texto insertado
+                    <del>
+                    
+                    Etiquetas de texto HTML	Texto borrado del documento
+                    <dfn>
+                    
+                    Etiquetas de texto HTML	Término definido dentro de una frase
+                    <kbd>
+                    
+                    Etiquetas de texto HTML	Entrada del teclado
+                    <pre>
+                    
+                    Etiquetas de texto HTML	Texto preformateado
+                    <samp>
+                    
+                    Etiquetas de texto HTML	Muestra de salida de un programa informático
+                    <var>
+                    
+                    Etiquetas de texto HTML	Nombre de variable utilizado en contexto matemático o de programación
+                    <br>
+                    
+                    Etiquetas de texto HTML	Salto de línea sencillo
+                    <div>
+                    
+                    Etiquetas de texto HTML	
+                    División
+                    
+                    <a>
+                    
+                    Etiquetas de enlace HTML	Etiqueta de anclaje de un enlace
+                    <base>
+                    
+                    Etiquetas de enlace HTML	
+                    Url base para todas las Url relativas dentro del documento
+                    
+                    <img>
+                    
+                    Etiquetas HTML de imagen y objeto	
+                    Imagen
+                    
+                    <area>
+                    
+                    Etiquetas HTML de imagen y objeto	Área de un mapa de imagen
+                    <map>
+                    
+                    Etiquetas HTML de imagen y objeto
+                    
+                    Mapa de imagen
+                    
+                    <param>
+                    
+                    Etiquetas HTML de imagen y objeto
+                    
+                    Parámetro para un elemento <Objeto>
+                    <object>
+                    
+                    Etiquetas HTML de imagen y objeto
+                    
+                    Insertar un objeto
+                    <ul>
+                    
+                    Etiquetas de lista HTML	
+                    Lista desordenada
+                    
+                    <ol>
+                    
+                    Etiquetas de lista HTML	Lista ordenada
+                    <li>
+                    
+                    Etiquetas de lista HTML	
+                    Lista
+                    
+                    <dl>
+                    
+                    Etiquetas de lista HTML	
+                    Lista de descripciones 
+                    
+                    <dt>
+                    
+                    Etiquetas de lista HTML	
+                    Término en la lista de descripciones 
+                    
+                    <dd>
+                    
+                    Etiquetas de lista HTML	
+                    Definición/Descripción de un término en la lista de descripciones 
+                    
+                    Para una lista completa con más de 100 elementos HTML, esta guía de javaTpoint te puede ser útil.
+                    
+                    Cómo revisar las etiquetas HTML de tu web
+                    Si ya tienes etiquetas HTML en tus páginas y quieres comprobar si se utilizan correctamente, puedes hacerlo mirando el HTML de tu página. Para ello, solo necesitas tu navegador web.
+                    
+                    Para ver el HTML de tu página web, debes:
+                    
+                    Hacer clic con el botón derecho del ratón mientras estás en tu página en Google Chrome.
+                    Selecciona en "Inspeccionar".
+                    Verás el código HTML en un recuadro en la parte lateral o inferior de tu página.
+                    Usa Ctrl + F para encontrar etiquetas o elementos concretos.
+                    Para comprobar si tu web usa de la manera correcta las etiquetas HTML, puedes hacer una auditoría SEO de la misma web. Herramientas de terceros como la herramienta de Auditoría del sitio puede comprobar si las etiquetas y atributos HTML básicos son correctos y si tus páginas utilizan demasiado HTML.
+                    
+                    Para realizar una auditoría SEO con la herramienta Auditoría del sitio, primero tendrás que crear un proyecto para tu dominio. Si ya tienes un proyecto, selecciona la opción "Auditoría del sitio" en el panel de control de tu proyecto:                    
+
+                    
+                </p>
+            </div>
+            <div class="card-footer text-body-secondary">
+            </div>
+          </div>
+      </div>
+</body>
+</html>
