@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabana HTML</title>
     
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -70,8 +71,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="extras.html">15:EXTRAS/OTRAS</a>
+
                 </li>
-                
+                 <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Index.html">Ir al inicio</a>
+              </li>
               </ul>
               
             </div>
@@ -82,10 +86,10 @@
       <div style="position: relative; bottom: -90px;" class="container-fluid">
         <div class="card mt-4">
             <div class="card-header">
-                IMAGEN
+                HIPERVÍNCULO
             </div>
-            <div class="card-body text-center">
-                <p>Actualmente, internet está plagado de contenido multimedia: videos, música, GIF, imágenes, animaciones, entre otros. Es normal que al entrar a cualquier página web nos encontremos con este tipo de recursos, pero no cabe duda que uno de los que más utilizamos al momento de crear una página web son las imágenes.
+            <div class="card-body ">
+                <h2></h2> <p>Actualmente, internet está plagado de contenido multimedia: videos, música, GIF, imágenes, animaciones, entre otros. Es normal que al entrar a cualquier página web nos encontremos con este tipo de recursos, pero no cabe duda que uno de los que más utilizamos al momento de crear una página web son las imágenes.
 
                     Agregar imagen en HTML
                     Si estás planeando diseñar o rediseñar tu sitio web, es importante conocer cómo insertar una imagen con HTML, y es justamente lo que te enseñaremos a hacer en este artículo. ¡Vamos!
@@ -94,47 +98,17 @@
                     ¿Cómo poner una imagen en HTML?
                     Para insertar una imagen en una página HTML se utiliza la etiqueta <img>. Es una etiqueta vacía que no contiene texto y que no necesita una etiqueta de cierre. Su atributo principal y el mínimo indispensable es el atributo src (por la palabra en inglés source) que, por medio de una URL, especifica el origen o la fuente de donde se obtendrá la imagen para ser mostrada en la página. 
                     
-                    La URL de la imagen puede ser relativa o absoluta. ¿Cuál es la diferencia?
+                    La URL de la imagen puede ser relativa o absoluta. ¿Cuál es la diferencia?</h2>
                     
-                    Una URL relativa indica la ruta donde está almacenada la imagen tomando como base el directorio donde está almacenado el archivo HTML desde el cual se está insertando la imagen.
-                    Una URL absoluta indica la ruta completa donde está almacenada la imagen, que puede ser un directorio de la computadora (C://Users/User1/Desktop/imagen.png) y donde se visualiza la página HTML, o una dirección completa de internet (https://test.com/images/imagen.png).
-                    La recomendación es utilizar siempre URL relativas al directorio de tu proyecto HTML, ya que eso optimiza la carga de la página al no tener que ir a cada sitio a descargar la imagen solicitada. Adicional a esto, Google recomienda almacenarlas en el subdirectorio «/images» para facilitar la indexación y posicionamiento en buscadores.
-                    
-                    Después de todo, así podemos insertar una imagen en HTML:
-                    
-                    <img src="images/imagen.png">
-                    Usando una URL absoluta quedaría así:
-                    
-                    <img src="https://test.com/images/imagen.png">
-                    Ejemplo de imagen HTML
-                    
-                    Otro atributo que da mucho valor conocer es alt. Este atributo define una descripción textual de la imagen que se pretende insertar para aquellas situaciones en que la imagen no pueda ser mostrada o tarde demasiado en mostrarse por una lenta conexión.
-                    
-                    <img src="images/imagen.png" alt="Esta es una descripcion alternativa de la imagen para cuando no se pueda mostrar">
-                    
-                    Descripción alternativa de imagen en HTML
-                    
-                    ¿Cómo redimensionar el tamaño de una imagen en HTML?
-                    Para redimensionar el tamaño de una imagen en HTML tenemos disponibles las etiquetas width (ancho) y height (alto) que permiten especificar la anchura y altura de la imagen.
-                    
-                    <img src="images/imagen.png" alt="Esta es una descripcion alternativa de la imagen para cuando no se pueda mostrar" width="480" height="380" />
-                    
+                   
                     La recomendación al momento de redimensionar imágenes con HTML es no utilizar estas etiquetas (width y height) ya que, si la imagen no tiene una buena resolución, al redimensionarla podría mostrarse pixelada o borrosa.
                     
                     Lo mejor es preparar la imagen con un editor de imágenes para que cubra las necesidades de la página web y, si aun así es totalmente necesario redimensionar la imagen, se recomienda usar CSS o JavaScript para asegurar la proporcionalidad o para redimensionar dinámicamente.
-                    
-                    ¿Cómo poner una imagen al lado de un texto en HTML?
-                    La etiqueta <img> también soporta el atributo align que puede tener los valores left (izquierda) y right (derecha).
-                    
-                    <img src="images/imagen.png" alt="Esta es una descripcion alternativa de la imagen para cuando no se pueda mostrar" width="150" height="150" align="right"/>
-                    
-                    Ejemplo de imagen HTML con texto a la derecha
-                    
-                    <img src="images/imagen.png" alt="Esta es una descripcion alternativa de la imagen para cuando no se pueda mostrar" width="150" height="150" align="left"/>
-                    
-                    Ejemplo de imagen HTML con texto a la izquierda
-                    
-                    Como puedes ver, este proceso es sencillo. Visita nuestra guía sobre HTML para conocer más funciones.</p>
+                     <h3 class="text-center">A continuacion  estara una imagen puesta con html:</h3>
+                
+                    <img src="img/micky.jpg" alt="" id="img1">
+
+              
             </div>
             <div class="card-footer text-body-secondary">
             </div>

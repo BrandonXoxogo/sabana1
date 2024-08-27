@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabana HTML</title>
+    <style>
+      body{
+ background-image: url("img/HTML5_oval_logo.png");
+}
+  </style>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -86,295 +91,21 @@
             <div class="card-header">
                 Texto
             </div>
-            <div class="card-body text-center">
-              <p>Fundamentos de texto en HTML
-                Anterior
-                Overview: Introducción a HTML
-                Siguiente
-                Una de las principales funciones de HTML es dar al texto estructura y significado (también conocido como semántica), de forma que un navegador pueda mostrarlo correctamente. Este articulo explica la forma en que se puede usar HTML para estructurar una página de texto añadiendo encabezados y párrafos, enfatizando palabras, creando listas y más.
-                
-                Prerrequisitos:	Estar familiarizado con el HTML básico, que se expone en [Empezar con HTML](/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started).
-                Objetivo:	Aprender a marcar una página de texto básica para darle estructura y significado, incluidos párrafos, encabezados, listas, efectos de énfasis y citas.
-                Conceptos básicos: Encabezados y párrafos
-                La mayor parte del texto estructurado está compuesto por encabezados y párrafos, independientemente de si lees una historia, un periódico, un libro de texto, una revista, etc.
-                
-                Un ejemplo de la portada de un periódico, que muestra el uso de un encabezado, subtítulos y párrafos de nivel superior.
-                El contenido estructurado simplifica la experiencia en la lectura y se disfruta más.
-                
-                En HTML, cada párrafo tiene que estar delimitado por un elemento <p>, como en este ejemplo:
-                
-                html
-                Copy to Clipboard
-                <p>Soy un párrafo, ¡desde luego que lo soy!</p>
-                Cada sección tiene que estar delimitada por un elemento de encabezado:
-                
-                html
-                Copy to Clipboard
-                <h1>Yo soy el título de la historia</h1>
-                Hay seis elementos de encabezado: <h1>, <h2>, <h3>, <h4>, <h5> y <h6>. Cada elemento representa un nivel de contenido diferente en el documento; <h1> representa el título principal, <h2> representa el subtítulo, <h3> representa el subtítulo del subtítulo, y así sucesivamente.
-                
-                Cómo establecer la estructura jerárquica
-                Por ejemplo, en esta historia, <h1> representa el título de la historia, <h2> representará el título de cada capítulo y <h3> las diferentes secciones del capítulo, y así sucesivamente.
-                
-                html
-                Copy to Clipboard
-                <h1>El agujero aplastante</h1>
-                
-                <p>Por Chris Mills</p>
-                
-                <h2>Capítulo 1: La oscura noche</h2>
-                
-                <p>
-                  Era una noche oscura. En algún lugar, un búho ululó. La lluvia azotó el ...
-                </p>
-                
-                <h2>Capítulo 2: El silencio eterno</h2>
-                
-                <p>Nuestro protagonista ni susurrar pudo al ver esa sombría figura ...</p>
-                
-                <h3>El espectro habla</h3>
-                
-                <p>
-                  Habían pasado varias horas más, cuando de repente el espectro se incorporó y
-                  exclamó: "¡Por favor, ten piedad de mi alma!"
-                </p>
-                Realmente es a tu elección lo que cada elemento involucrado represente, siempre y cuando la jerarquía tenga sentido. Solo es necesario que tengas en cuenta unas pocas buenas prácticas mientras creas la estructura:
-                
-                Preferentemente debes usar solo un <h1> por página; este es el nivel de título superior, y todos los demás se sitúan por debajo de él en la jerarquía.
-                Asegúrate de que usas los títulos en el orden correcto en la jerarquía. No uses los <h3> para representar subtítulos, seguidos de los <h2> para representar los subtítulos de los subtítulos; eso no tiene sentido y provocará resultados extraños.
-                De los seis niveles de títulos disponibles, debes procurar no usar más de tres por página, a menos que creas que es realmente necesario. Los documentos con muchos niveles (es decir, una jerarquía de títulos muy profunda) son de difícil manejo y navegación. En esos casos se recomienda, si es posible, separar el contenido en varias páginas.
-                ¿Por qué necesitamos estructura?
-                Para responder a esta cuestión, echemos un vistazo a text-start.html; el apartado inicial de nuestro ejemplo en curso para este artículo (una buena receta de hummus). Debes guardar una copia de este archivo en tu ordenador porque después la necesitarás para los ejercicios prácticos. El cuerpo (<body>) de este documento incluye varios elementos de contenido que no están marcados de ninguna manera pero están separados por saltos de línea (se ha pulsado Intro/Retorno para continuar en la siguiente línea).
-                
-                Sin embargo, cuando abres el documento en tu navegador, verás que el texto aparece... ¡como una masa enorme!
-                
-                Una página web que muestra un muro de texto sin formato, porque no hay elementos en la página para estructurarlo.
-                Esto se debe a que no hay elementos que den estructura al contenido, por lo que el navegador no sabe qué es un encabezado y qué es un párrafo. Además:
-                
-                Los usuarios que miran una página web tienden a escanearla rápidamente para encontrar el contenido relevante que hay en ella y a menudo empiezan por leer los encabezados para comenzar. (Solemos pasar muy poco tiempo en una página web). Si no pueden ver nada útil en unos segundos, es probable que se sientan frustrados y se vayan a otro sitio.
-                Los motores de búsqueda que indizan tu página consideran el contenido de los títulos como palabras clave importantes e influyen en la puntuación de búsqueda de la página. Sin encabezados, tu página tendrá un rendimiento bajo en términos de optimización de motores de búsqueda SEO.
-                Las personas con discapacidad visual severa no suelen leer páginas web: en lugar de ello, las escuchan. Lo hacen con un software llamado Lector de pantalla. Este software proporciona acceso rápido a un contenido textual dado. Entre las diversas técnicas que emplean, leen los encabezados para proporcionar un esquema del documento que permite a los usuarios encontrar rápidamente la información que quieren. Si no hay encabezados disponibles, se ven obligados a escuchar el documento entero.
-                Para aplicar estilos al contenido con CSS, o para que haga cosas interesantes con JavaScript, necesitas tener elementos que delimiten el contenido relevante para que CSS/JavaScript se puedan focalizar en este efectivamente.
-                Por lo tanto, debemos dar a nuestro contenido una estructura definida.
-                
-                Aprendizaje Activo: Dar estructura a nuestro contenido
-                Pasemos directamente a un ejemplo real. En el ejemplo de abajo, añade elementos al texto en bruto en el campo Código editable para que en el campo Salida en vivo aparezcan como un encabezado y dos párrafos.
-                
-                Si te equivocas, siempre puedes restablecer el código anterior pulsando el botón Restablecer. Si encallas, pulsa el botón Mostrar solución para ver la respuesta...
-                
-                play
-                
-                ¿Por qué necesitamos semántica?
-                Contamos con la semántica para todo lo que nos rodea. Nos basamos en experiencias previas para conocer la función de cada objeto cotidiano; cuando miramos un objeto, sabemos cuál debe ser su función. Entonces, por ejemplo, esperamos que un semáforo en rojo signifique "alto" y que un semáforo en verde signifique "avance". Las cosas se pueden complicar muy rápidamente si se aplica la semántica incorrecta. (¿Algún país usa rojo para significar "avance"? Esperemos que no).
-                
-                De manera similar, debemos asegurarnos de que utilizamos los elementos adecuados y damos a nuestro contenido el significado y función correctos y la apariencia adecuada. En este mismo sentido, el elemento <h1> es un elemento semántico que da al texto al que delimita la función (o significado) de un titular de primer nivel en tu página.
-                
-                html
-                Copy to Clipboard
-                <h1>Este es un titular de primer nivel</h1>
-                De manera predeterminada, el navegador le asignará una fuente de gran tamaño para darle el aspecto de un titular (aunque se le podrá dar el estilo que se quisiera usando CSS). Lo más importante es que su valor semántico se va a usar de diferente manera, por ejemplo, por los motores de búsqueda y los lectores de pantalla (como se mencionó antes).
-                
-                Por otra parte, podrías hacer que cualquier elemento parezca un titular de primer rango. Considera lo siguiente:
-                
-                html
-                Copy to Clipboard
-                <span style="font-size: 32px; margin: 21px 0;"
-                  >¿Es este un titular de primer rango?</span
-                >
-                Este es un elemento <span>. No tiene semántica. Se usa para delimitar contenido cuando se le quiere aplicar CSS (o tratarlo con JavaScript) sin proporcionarle ningún significado extra (encontrarás más información sobre este tipo de elemento más adelante en el curso). Hemos aplicado CSS a este elemento para que parezca un titular de primer nivel, pero al no tener valor semántico, no tiene ninguna de las ventajas añadidas que hemos descrito antes. Es una buena idea usar el elemento HTML apropiado para cada tarea.
-                
-                Listas
-                Ahora volvamos nuestra atención hacia las listas. Las listas están en todos los aspectos de nuestra vida: desde la lista de compras a la lista de instrucciones que sigues inconscientemente para llegar a casa todos los días, o las listas de instrucciones que sigues en estos tutoriales. Las listas están en todos lados en la web también y hay tres diferentes tipos de las que nos vamos a ocupar.
-                
-                Listas no ordenadas
-                Las listas no ordenadas se usan para marcar listas de artículos cuyo orden no es importante. Tomemos como ejemplo una lista de compras:
-                
-                bash
-                Copy to Clipboard
-                leche
-                huevos
-                pan
-                hummus
-                Cada lista desordenada comienza con un elemento <ul> («unordered list») que delimita todos los elementos de la lista:
-                
-                html
-                play
-                Copy to Clipboard
-                <ul>
-                  leche huevos pan hummus
-                </ul>
-                El siguiente paso es delimitar cada artículo de la lista con un elemento <li> («list item»).
-                
-                html
-                play
-                Copy to Clipboard
-                <ul>
-                  <li>leche</li>
-                  <li>huevos</li>
-                  <li>pan</li>
-                  <li>hummus</li>
-                </ul>
-                Aprendizaje activo: marcar una lista no ordenada
-                Edita el siguiente ejemplo para crear tu propia lista HTML no ordenada.
-                
-                play
-                
-                Listas ordenadas
-                Las listas ordenadas son aquellas en las que el orden de los elementos sí importa. Tomemos como ejemplo una lista de instrucciones para seguir un itinerario:
-                
-                bash
-                Copy to Clipboard
-                Conduce hasta el final de la calle
-                Gira a la derecha
-                Sigue derecho por las dos primeras glorietas
-                Gira a la izquierda en la tercer glorieta
-                El colegio está a la derecha, 300 metros más adelante
-                La estructura de marcado es la misma que para las listas no ordenadas, excepto que debes delimitar los elementos de la lista con una etiqueta <ol> («ordered list»), en lugar de <ul>:
-                
-                html
-                play
-                Copy to Clipboard
-                <ol>
-                  <li>Conduce hasta el final de la calle</li>
-                  <li>Gira a la derecha</li>
-                  <li>Sigue derecho por las dos primeras glorietas</li>
-                  <li>Gira a la izquierda en la tercer glorieta</li>
-                  <li>El colegio está a tu derecha, 300 metros más adelante</li>
-                </ol>
-                Aprendizaje activo: Marcar una lista ordenada
-                Edita el siguiente ejemplo para crear tu propia lista ordenada en HTML.
-                
-                play
-                
-                Aprendizaje activo: marcar la página de tu receta
-                Llegados a este punto del artículo, tienes toda la información necesaria para marcar la página de ejemplo con tu receta. Puedes escoger entre guardar una copia local del archivo inicial text-start.html y trabajar en él, o hacerlo sobre el ejemplo editable de abajo. Probablemente sea mejor trabajar en tu copia local porque podrás guardar tu progreso, mientras que si lo haces sobre el ejemplo editable, los cambios se perderán la próxima vez que cargues la página. Ambos métodos tienen pros y contras.
-                
-                play
-                
-                Si encallas, siempre puedes pulsar el botón Mostrar solución o comprobar el ejemplo completo text-complete.html en nuestro repositorio de Github.
-                
-                Listas anidadas
-                Es perfectamente correcto anidar una lista dentro de otra. Posiblemente quieras tener subelementos bajo elementos de rango superior. Tomemos la segunda lista de nuestro ejemplo de la receta:
-                
-                html
-                Copy to Clipboard
-                <ol>
-                  <li>Pela el ajo y picarlo en trozos gruesos.</li>
-                  <li>
-                    Retira las semillas y el tallo del pimiento, y cortarlo en trozos gruesos.
-                  </li>
-                  <li>Mete todos los alimentos en un procesador de alimentos.</li>
-                  <li>Pica todos los ingredientes hasta conseguir una pasta.</li>
-                  <li>Si deseas un hummus "grueso", procésalo corto tiempo.</li>
-                  <li>Pica durante más tiempo si se desea obtener un hummus "suave".</li>
-                </ol>
-                Puesto que los dos últimos elementos están estrechamente relacionados con el elemento anterior (se leen como subinstrucciones u opciones que encajan bajo ese elemento), puede tener sentido anidarlos dentro de su propia lista no ordenada e introducir esa lista bajo el cuarto elemento. Tendría el siguiente aspecto:
-                
-                html
-                Copy to Clipboard
-                <ol>
-                  <li>Pela el ajo y picarlo en trozos gruesos.</li>
-                  <li>
-                    Retira las semillas y el tallo del pimiento, y cortarlo en trozos gruesos.
-                  </li>
-                  <li>Mete todos los alimentos en un procesador de alimentos.</li>
-                  <li>
-                    Procesa todos los ingredientes hasta conseguir una pasta.
-                    <ul>
-                      <li>Si deseas un hummus "grueso", procésalo corto tiempo.</li>
-                      <li>Pica durante más tiempo si se desea obtener un hummus "suave".</li>
-                    </ul>
-                  </li>
-                </ol>
-                Vuelve al ejemplo anterior y reescribe la lista de este modo.
-                
-                Énfasis e importancia
-                En el lenguaje humano, a menudo enfatizamos ciertas palabras para alterar el significado de una frase, y a menudo queremos destacar ciertas palabras como importantes o diferentes en algún sentido. HTML nos dota de diversos elementos semánticos que nos permiten destacar contenido textual con tales efectos, y en esta sección veremos los más comunes.
-                
-                Énfasis
-                Cuando queremos dar énfasis al lenguaje hablado, acentuamos ciertas palabras y así alteramos sutilmente el significado de lo que decimos. De manera similar, en el lenguaje escrito ponemos palabras en cursiva para destacarlas. Por ejemplo, las dos siguientes frases tienen diferente significado:
-                
-                Me alegro de que no llegues tarde.
-                
-                Me alegro de que no llegues tarde.
-                
-                La primera frase suena aliviada porque la persona no llega tarde. Por el contrario, la segunda suena sarcástica y un tanto pasivo-agresiva, expresa molestia porque la persona ha llegado algo tarde.
-                
-                En HTML usamos el elemento <em> («emphasis») para marcar estos casos. El documento logra entonces transmitir una lectura más interesante y además así lo reconocen los lectores de pantalla, que lo expresan con un diferente tono de voz. El navegador, de manera predeterminada, aplica el estilo de letra itálica, pero no debes utilizar esta etiqueta solamente para establecer el estilo de letra itálica. Para usar ese estilo, debes utilizar únicamente la etiqueta del elemento <span> y algo de CSS u otra etiqueta con el elemento <i> (ve abajo).
-                
-                html
-                Copy to Clipboard
-                <p>Me <em>alegro</em> de que no llegues <em>tarde</em>.</p>
-                Importancia fuerte
-                Para enfatizar palabras importantes al hablar solemos acentuarlas, y al escribir lo hacemos en estilo negrita. Por ejemplo:
-                
-                Este líquido es altamente tóxico.
-                
-                Cuento contigo. ¡No llegues tarde!
-                
-                En HTML usamos el elemento <strong> (importancia fuerte) para marcar tales expresiones. El documento resulta entonces más útil, y de nuevo los lectores de pantalla reconocen estos elementos y el tono de voz cambia a uno más fuerte. El estilo negrita es el que aplican los navegadores por omisión, pero no debes usar esta etiqueta solamente para aplicar este estilo. Para hacer eso usa el elemento <span> y CSS, o un elemento <b> (ve más abajo).
-                
-                html
-                Copy to Clipboard
-                <p>Este líquido es <strong>altamente tóxico</strong>.</p>
-                
-                <p>Cuento contigo. <strong>¡No llegues tarde!</strong></p>
-                Puedes anidar elementos de énfasis dentro de elementos de importancia y viceversa si lo deseas:
-                
-                html
-                Copy to Clipboard
-                <p>
-                  Este líquido es <strong>altamente tóxico</strong> — si lo bebes,
-                  <strong>podrías <em>morir</em></strong
-                  >.
-                </p>
-                Aprendizaje activo: ¡Seamos importantes!
-                En esta sección de aprendizaje activo te proporcionamos un ejemplo editable. Practica un poco añadiendo algo de énfasis e importancia a las palabras que creas que lo necesitan.
-                
-                play
-                
-                Cursiva, negrita, subrayado
-                Los elementos que hemos comentado hasta ahora tienen asociada una semántica clara. La situación con <b> (negrita o «bold»), <i> (cursiva o «italic») y <u> (subrayado o «underline») es algo más complicada. Surgieron para que las personas pudieran escribir textos en negrita, cursiva o subrayado en un tiempo en el que pocos navegadores o ninguno admitían el CSS. Elementos como estos, que solo afectan a la presentación y no a la semántica, se conocen como elementos de presentación y no se deberían usar porque, como hemos visto, la semántica es muy importante para la accesibilidad y el SEO, entre otros aspectos.
-                
-                HTML5 redefinió los elementos <b>, <i> y <u> con roles semánticos nuevos un tanto confusos.
-                
-                Esta es la regla de oro: el uso de <b>, <i> o <u> resulta adecuado cuando transmiten el significado que suele transmitir el uso tradicional de las negritas, itálicas o el subrayado, si no hay ningún otro elemento que resulte más adecuado. Sin embargo, siempre resulta crítico mantener una actitud orientada a la accesibilidad. El concepto de itálica no es demasiado útil para las personas que usan lectores de pantalla o para las personas que utilizan un sistema de escritura distinto del alfabeto latino.
-                
-                <i> se usa para transmitir el significado que tradicionalmente transmite la itálica: extranjerismos, clasificaciones taxonómicas, conceptos técnicos, un pensamiento...
-                <b> se usa para transmitir el significado que tradicionalmente transmite la negrita: palabras clave, nombres de productos, frases principales...
-                <u> se usa para transmitir el significado que tradicionalmente conlleva el subrayado: nombres propios, errores ortográficos...
-                Nota: Una observación prudente acerca del subrayado: La gente suele asociar estrechamente el subrayado con los hipervínculos. Por ello en la web es mejor reservar el subrayado para los enlaces. Utiliza el elemento <u> cuando resulte apropiado semánticamente, pero considera usar CSS para cambiar el subrayado predeterminado por algo más adecuado en la web. El siguiente ejemplo ilustra cómo lo puedes hacer.
-                
-                html
-                Copy to Clipboard
-                <!-- nombres científicos -->
-                <p>
-                  El colibrí garganta de rubí (<i>Archilochus colubris</i>) es el colibrí más
-                  común en el este de América del Norte.
-                </p>
-                
-                <!-- extranjerismos -->
-                <p>
-                  El menú era un mar de palabras exóticas como <i lang="uk-latn">vatrushka</i>,
-                  <i lang="id">nasi goreng</i> y <i lang="fr">soupe à l'oignon</i>.
-                </p>
-                
-                <!-- un error ortográfico reconocido -->
-                <p>Algún día aprenderé a deletrear mejor.</p>
-                
-                <!-- Palabras clave destacadas en una serie de instrucciones -->
-                <ol>
-                  <li><b>Corta</b> dos piezas de la hogaza de pan.</li>
-                  <li>
-                    <b>Inserta</b> una rodaja de tomate y una hoja de lechuga entre las
-                    rebanadas de pan.
-                  </li>
-                </ol>
-                ¡Pon a prueba tus habilidades!
-                Has llegado al final de este artículo, pero ¿puedes recordar la información más importante? Encontrarás más ejercicios con los que comprobar que has retenido esta información antes de seguir adelante en Pon a prueba tus habilidades: Prueba de conocimientos básicos de HTML.
-                
-                Resumen
-                ¡Eso es todo por ahora! Este artículo debería haberte dado una buena idea de cómo comenzar a marcar texto en HTML y te ha presentado algunos de los elementos más importantes en este ámbito. Hay muchos más elementos semánticos para desarrollar en esta área, y veremos muchos más en nuestro artículo Formateo de texto avanzado, más adelante en el curso. En el siguiente artículo, veremos en detalle cómo crear hipervínculos, posiblemente el más importante elemento en la web.</p>
+            <div class="card-body ">
+              <h2>Texto Básico HTML</h2>
+              <p>Para escribir texto dentro de un documento HTML simplemente tenemos que añadir texto al fichero que contenga nuestra página web. Así de simple. Solo añadimos el texto que queramos visualizar. <br>
+
+                Si bien deberemos de tener en cuenta algunos condicionantes. Sobre todo si queremos insertar caracteres o símbolos particulares de nuestro idioma. Por ejemplo, cuando añadimos una ñ o el símbolo del copyright. Para ello tenemos las entidades, que veremos más adelante. <br>
+                
+                Así podemos tener nuestro documento HTML y escribir lo siguiente. <br>
+                
+                Este es mi primer texto en una web <br> <br></p>
+                <img src="img/Captura de pantalla 2024-08-26 180403.png" alt="">
+                <p>Hay seis elementos de encabezado: < h1 >, < h2 >, < h3 >, < h4 >, < h5 > y < h6 >. Cada elemento representa un nivel de contenido diferente en el documento; < h1 > representa el título principal, < h2 > representa el subtítulo, < h3 > representa el subtítulo del subtítulo, y así sucesivamente.</p>
+                <h2>Cómo establecer la estructura jerárquica</h2>
+                <p>Por ejemplo, en esta historia, < h1 > representa el título de la historia, < h2 > representará el título de cada capítulo y < h3 > las diferentes secciones del capítulo, y así sucesivamente.</p>
+                <img src="img/Captura de pantalla 2024-08-26 180711.png" alt="">
+
             </div>
             <div class="card-footer text-body-secondary">
             </div>

@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabana HTML</title>
+    <style>
+        body{
+   background-image: url("img/HTML5_oval_logo.png");
+  }
+    </style>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -86,148 +91,24 @@
             <div class="card-header">
                 ESTRUCTURA BASICA DE UNA PAGINA HTML
             </div>
-            <div class="card-body text-center">
-                <P>¿Cuál es la estructura básica de una página en HTML?
-                    Quizás no lo sepas, pero antes de que existieran CMS como WordPress que facilitan la creación de páginas web sin necesidad de tocar nada de código, era necesario saber HTML, y, aunque hoy no sea indispensable, si de verdad quieres entender el mundo del diseño web es vital que tengas algunas nociones básicas sobre el lenguaje.
-                    
-                    Lo primero que debes saber es que existe una estructura básica de HTML que debe estar presente en toda página web y que está formada por varias etiquetas anidadas. De ese tema hablamos en este post, con la intención de que comiences a dominar el lenguaje de marcado.
-                    
-                    Índice de contenido
-                    ¿Qué es HTML?
-                    HTML es el acrónimo de HyperText Markup Language, en español, Lenguaje de Marcado de Hipertexto. Pero, ¿qué es?
-                    
-                    Como lo indica su nombre, se trata de un lenguaje de marcado formado por un conjunto de etiquetas que se combinan para crear una página web.
-                    
-                    Para escribir en HTML solo hace falta un bloc de notas y un navegador web. En el bloc de notas se escriben las etiquetas y en el navegador se muestra el resultado, es decir, la propia página web. Esto es posible, porque los navegadores son capaces de entender y procesar las distintas etiquetas que forman el lenguaje.
-                    
-                    ¿Es HTML un lenguaje de programación?
-                    Queremos dejar claro que es incorrecto decir que HTML es un lenguaje de programación, porque en realidad es un lenguaje de etiquetas que un navegador web procesa. 
-                    
-                    Si tomamos en cuenta las características principales de los lenguajes de programación, nos damos cuenta que HTML no las posee, por ejemplo, en el lenguaje de marcado no se habla de ciclos, variables ni funciones, que son tan importantes en C++, Python o JavaScript, por ejemplo.
-                    
-                    Además, hay algo muy importante, en HTML no se aplica la lógica como sí se hace en los lenguajes de programación, donde esta es fundamental para poder resolver problemas.
-                    
-                    Principales características de HTML
-                    Las etiquetas se escriben dentro de los símbolos < y >.
-                    Las etiquetas permiten separar el texto normal del código HTML.
-                    La mayoría de las etiquetas deben cerrarse, para ello, se debe agregar el símbolo / después de <. Ejemplo: </body>.
-                    Las etiquetas pueden escribirse en mayúscula o minúscula, como lo prefiera el desarrollador.
-                    Los archivos HTML, deben guardarse con la extensión .html o .htm y son abiertos por los navegadores web.
-                    Para crear y editar documentos HTML no hace falta un software específico, sino que puede hacerse desde cualquier bloc de notas.
-                    Las normas del lenguaje son definidas por el World Wide Web Consortium.
-                    Estructura básica de HTML
-                    La estructura básica de un documento HTML es la siguiente:
-                    
-                    <html>
-                    
-                                <head>
-                    
-                                </head>
-                    
-                                <body>
-                    
-                    Cuerpo de la página
-                    
-                    </body>
-                    
-                    </html>
-                    
-                    Todo documento HTML tiene como mínimo esa estructura, y a ella se suman otras etiquetas que permiten crear el contenido de la página. Veamos a continuación qué significa cada una de las partes de esta estructura.
-                    
-                    A medida que hablemos de cada etiqueta, haremos un ejercicio práctico bastante sencillo, así que abre tu bloc de notas.
-                    
-                    <html>
-                    Cuando se comienza a crear una página web, la primera etiqueta que debe aparecer en el archivo es <html> que indica que todo lo que sigue son instrucciones en ese lenguaje de marcado.
-                    
-                    La ultima etiqueta de una página web es </html> con la cual se cierra el código. Por lo tanto, todo lo que vaya a formar parte de nuestra página web, debe estar escrito dentro de estas etiquetas.
-                    
-                    Entonces, para efecto de nuestro ejemplo, debes escribir <html> en la primera línea del documento y </html> en la siguiente.
-                    
-                    <html>
-                    
-                    </html>
-                    
-                    <Head> (Cabecera)
-                    El Head es la primera parte de un documento HTML, es decir, la cabecera de la página. Dentro de ella suele incluirse el título que queremos aparezca en la barra de direcciones del navegador web cuando tengamos la página abierta, así como los metadatos, estilos y otra información.
-                    
-                    Por lo tanto, para seguir con el ejercicio, debajo de <html> agrega ahora <head> y </head>. Te debe ir quedando así:
-                    
-                    <html>
-                    
-                                <head>
-                    
-                    </head>
-                    
-                    </html>
-                    
-                    Por lo general, dentro del Head se escribe la etiqueta <title> con la frase que queremos aparezca en la barra de título del navegador web. Esta etiqueta debe cerrarse inmediatamente después de escribir el nombre, para ello se escribe </title>
-                    
-                    Supongamos que en nuestro ejemplo estamos creando la página de inicio de una web llamada estoesunejemplo.com, y queremos que en la barra de título se lea ”Inicio – Esto es un ejemplo”, para esto bastará con escribir ese texto dentro de <title>, así:
-                    
-                    <title>Inicio – Esto es un ejemplo</title>
-                    
-                    Verás que, con el uso de estas etiquetas, nuestro ejemplo va tomando forma:
-                    
-                    <html>
-                    
-                                <head>
-                    
-                                            <title> Inicio – Esto es un ejemplo</title>
-                    
-                    </head>
-                    
-                    </html>
-                    
-                    <body> (Cuerpo)
-                    La segunda parte de todo documento HTML es el cuerpo, conformado por todo lo que queremos que aparezca en la página, es decir, aquello que mostrará el navegador: texto, imágenes, videos, tablas, o cualquier otro elemento compatible. Esta etiqueta debe cerrarse con </body>
-                    
-                    Ejemplo:
-                    
-                    <html>
-                    
-                                <head>
-                    
-                                            <title>Inicio – Esto es un ejemplo </title>
-                    
-                                </head>
-                    
-                                <body>
-                    
-                    </body>
-                    
-                    </html>
-                    
-                    Aplicando el ejemplo
-                    Suponemos que ya tienes escritas en tu bloc de notas todas las líneas anteriores. ¿qué te parece si vemos cómo va quedando?
-                    
-                    Para ello guarda el archivo y colócale el nombre miprimeraweb.html (es importante que agregues la extensión). Ubica el archivo guardado en tu ordenador y podrás darte cuenta que tiene el icono del navegador web que tienes predeterminado, haz doble clic sobre él para que se abra.
-                    
-                    En este punto, tu ventana del navegador mostrará una página en blanco y en la barra de título dirá: Inicio – Este es un ejemplo.
-                    
-                    
-                    ¿Por qué no se muestra nada en la página? Sencillo, porque no hemos escrito nada dentro del <body> </body> ¿Lo hacemos?
-                    
-                    Para ello, abre el archivo nuevamente, pero esta vez con el bloc de notas. Dirígete a la etiqueta <body> y dentro de ella escribe: “Esto haciendo mi primera página web”.
-                    
-                    Debe quedarte de esta forma:
-                    
-                    <html>
-                    
-                                <head>
-                    
-                                            <title>Inicio – Esto es un ejemplo </title>
-                    
-                                </head>
-                    
-                                <body>
-                    
-                    Estoy haciendo mi primera página web
-                    
-                    </body>
-                    
-                    </html>
-                    
-                    Guarda el archivo y actualiza el navegador para recargar la página (o abre nuevamente la página si la habías cerrado). Ahora, verás en pantalla el texto que acabas de escribir. ¿Magia? No, HTML.</P>
+            <div class="card-body ">
+                <h2>Qué incluye la estructura HTML?</h2>
+                <p>La estructura HTML de una página web se compone de las etiquetas < html >, que indica el comienzo de la página;< head >,
+                     que contiene información más descriptiva sobre el sitio; y < body >, que conforma todos los elementos visibles de la página. </p>
+                     <p>Como puedes notar, todas las etiquetas están constituidas al inicio y al final por los signos < y >, que representan precisamente la apertura y el cierre de cada elemento para que el lenguaje HTML pueda funcionar. En este sentido, existen dos tipos de etiquetas HTML: <br>
+
+                        <h3>Etiquetas emparejadas.</h3> Vienen en pares y tienen una apertura y cierre. Tal como las que conoces: < >. <br>
+
+                        <h3>Etiquetas vacías.</h3> Se refiere a las etiquetas que no requieren cierre. <br> 
+                        En la siguiente imagen te mostramos un ejemplo de cómo se ve una etiqueta básica de HTML con su apertura y cierre: <br><br>
+                        Los atributos se refieren a toda la propiedad adicional de las etiquetas HTML. Esto significa que definen cualquier elemento de la página web; por ejemplo, ancho, entrada, texto. Estos también ayudan a almacenar información en metaetiquetas con la atribución de nombre, contenido y tipo.
+                    </p>
+                    <h2>Ejemplo de una estructura HTML básica</h2>
+                    <p>Ya que conoces qué incluye la estructura HTML básica, te mostramos de forma más desglosada un ejemplo que te servirá para visualizar mejor los elementos previamente mencionados. <br>
+
+                        En la imagen siguiente puedes ver cómo se visualiza la estructura básica en lenguaje HTML para formar una página web:</p>
+                        <img src="img/Captura de pantalla 2024-08-26 163007.png" alt="">
+               
             </div>
             <div class="card-footer text-body-secondary">
             </div>

@@ -1,22 +1,18 @@
 
 body{
-   background-image: url("HTML5_oval_logo.png");
+   background-image: url("img/HTML5_oval_logo.png");
 }
 
 
 
 
-.custom-offcanvas {
-   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+
+#img1{
+   height: 300px;
+   font-weight: 200px;
+  position: absolute;
+  right: 500px;
 }
 
-.custom-offcanvas.show {
-   transform: translateX(0);
-   opacity: 1;
-}
-
-.custom-offcanvas:not(.show) {
-   transform: translateX(100%);
-   opacity: 0;
-}
 
